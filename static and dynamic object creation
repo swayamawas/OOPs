@@ -1,0 +1,25 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+class Student{
+    // creation of the class
+    public:
+    string name;
+    int roll_number;
+    
+};
+int main(){
+    //static creation
+    Student s1;
+    
+s1.name = "Swayam";// this is how you take input
+s1.roll_number = 4;
+cout<<s1.name<<endl;
+cout<<s1.roll_number<<endl;// dot operator to print
+//dynamic allocation
+Student *s2 = new Student;
+(*s2).name = "sumit";
+(*s2).roll_number = 5;// you just need to put bracket and dereference operator
+cout<<(*s2).name<<endl;
+cout<<(*s2).roll_number<<endl;
+}
